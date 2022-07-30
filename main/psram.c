@@ -157,7 +157,7 @@ static void guiTask(void *pvParameter)
 
 static void create_demo_application(void)
 {
-    lv_demo_keypad_encoder();
+    lv_demo_music();
 }
 
 static void lv_tick_task(void *arg)
