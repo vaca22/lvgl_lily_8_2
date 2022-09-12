@@ -31,6 +31,7 @@
 
 
 #include "lvgl_helpers.h"
+#include "ui.h"
 
 /*********************
  *      DEFINES
@@ -132,7 +133,7 @@ static void guiTask(void *pvParameter)
     ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, LV_TICK_PERIOD_MS * 1000));
 
     /* Create the demo application */
-    create_demo_application();
+    ui_init();
 
     while (1)
     {
